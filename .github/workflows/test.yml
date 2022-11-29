@@ -16,3 +16,5 @@ jobs:
         clean: true
       env:
         GIT_TRACE: true
+    - run: |
+        if [[ $((1 + $RANDOM % 3)) -eq 3 ]]; then exit 127; fi
