@@ -1,7 +1,9 @@
 name: self-hosted-linux-checkout-test
 
 on:
-  workflow_dispatch:
+  - workflow_dispatch
+  - push
+  - pull_request
 
 jobs:
   basic:
