@@ -8,13 +8,9 @@ on:
 jobs:
   basic:
     runs-on: self-hosted
-    name: linux
+    name: windows
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@vmjoseph/toolkit-windows-exec
       with:
         fetch-depth: 0
         clean: true
-      env:
-        GIT_TRACE: true
-    - run: |
-        if [[ $((1 + $RANDOM % 3)) -eq 3 ]]; then exit 127; fi
