@@ -1,4 +1,4 @@
-name: self-hosted-windows-checkout-test
+name: hosted-linux-checkout-test
 
 on:
   - workflow_dispatch
