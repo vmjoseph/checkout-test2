@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Support longpaths
-        run: sudo git config --system core.longpaths true    
+        run: git config --system core.longpaths true    
       - name: windows
         uses: actions/checkout@vmjoseph/toolkit-windows-exec
         with:
