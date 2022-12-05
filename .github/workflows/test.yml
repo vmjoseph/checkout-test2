@@ -8,10 +8,11 @@ on:
 jobs:
   basic:
     runs-on: self-hosted
-    name: windows
-          run:git config --system core.longpaths true
     steps:
-    - uses: actions/checkout@vmjoseph/toolkit-windows-exec
-      with:
-        fetch-depth: 0
-        clean: true
+      - name: Support longpaths
+        run: git config --system core.longpaths true    
+      - name: windows
+        uses: actions/checkout@vmjoseph/toolkit-windows-exec
+        with:
+          fetch-depth: 0
+          clean: true
