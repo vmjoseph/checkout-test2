@@ -9,8 +9,8 @@ jobs:
   basic:
     runs-on: self-hosted
     steps:
-      # - name: Support longpaths
-      #  run: git config --system core.longpaths true    
+      - name: Support longpaths
+        run: git config --system core.longpaths true    
       - name: windows
         uses: actions/checkout@vmjoseph/toolkit-windows-exec
         with:
