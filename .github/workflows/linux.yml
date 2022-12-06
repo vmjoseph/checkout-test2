@@ -9,8 +9,6 @@ jobs:
   basic:
     runs-on: ubuntu-latest
     steps:
-      - name: Support longpaths
-        run: git config --system core.longpaths true    
       - name: windows
         uses: actions/checkout@vmjoseph/toolkit-windows-exec
         with:
