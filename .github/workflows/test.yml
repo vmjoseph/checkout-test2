@@ -12,7 +12,7 @@ jobs:
      # - name: Support longpaths
      #   run: git config --system core.longpaths true    
       - name: windows
-        uses: actions/checkout@vmjoseph/test-checks
+        uses: actions/checkout@vmjoseph/toolkit-windows-exec
         with:
           fetch-depth: 0
           clean: true
