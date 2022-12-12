@@ -1,0 +1,16 @@
+name: node-basics
+
+on:
+  workflow_dispatch: 
+  
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        # note that arm/arm64 are self hosted runners 
+        os: [ubuntu-latest, windows-latest, macos-latest, arm, arm64]
+        node-version: [12.x, 16.x]
+    name: node on (${{ matrix.os }}) using ${{ matrix.node-version }}
+    steps:
+    - uses: actions/checkout@v3
