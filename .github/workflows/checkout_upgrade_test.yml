@@ -9,8 +9,8 @@ jobs:
     strategy:
       matrix:
         # note that arm/arm64 are self hosted runners 
-        os: [ubuntu-latest, windows-latest, macos-latest, arm, arm64]
+        os: [ubuntu-latest, windows-latest, macos-latest]
         node-version: [12.x, 16.x]
     name: node on (${{ matrix.os }}) using ${{ matrix.node-version }}
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.2.0
