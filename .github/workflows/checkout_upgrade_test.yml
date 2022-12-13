@@ -1,4 +1,4 @@
-name: node-basics
+name: checkout-version-smoketest
 
 on:
   workflow_dispatch: 
